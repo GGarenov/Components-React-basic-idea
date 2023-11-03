@@ -7,7 +7,7 @@ function App() {
     <div>
       <h1>My first Dynamic React App</h1>
 
-      <MovieList movies={ movies} headingText="Filmi"/>
+      <MovieList movies={movies} headingText="Movie list"/>
       
     </div>
   )
