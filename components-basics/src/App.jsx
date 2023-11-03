@@ -1,3 +1,4 @@
+import MovieList from './components/MovieList'
 import './App.css'
 
 const movies = [
@@ -17,14 +18,12 @@ const movies = [
 ]
 
 function App() {
-  const [count, setCount] = useState(0)
-
-
-
-
   return (
     <div>
       <h1>My first Dynamic React App</h1>
+
+      <MovieList headingText="Filmi" secondaryText="Secondary Text" />
+      <MovieList headingText= "Pedali" secondaryText = "Secondary Text" />
     </div>
   )
 }
