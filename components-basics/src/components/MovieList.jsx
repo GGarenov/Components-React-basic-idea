@@ -3,9 +3,9 @@ export default function MovieList(props) {
         <div className="movie-list">
         <h2>{props.headingText}</h2>
             <ul>
-                <li>First movie</li>
-                <li>Second movie</li>
-                <li>Third movie</li>
+                <li>{props.movies[0].title}</li>
+                <li>{props.movies[1].title}</li>
+                <li>{props.movies[2].title}</li>
         </ul>
 
 
