@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 export default function Counter(props) {
-    const [counter, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-    const incrementCounter = () => {
+    const incrementClickHandler = () => {
         setCount(count + 1);
     };
 
@@ -11,8 +11,8 @@ export default function Counter(props) {
         <div>
             <h1>Counter</h1>
 
-            <p>Counter: { }</p>
-            <button onClick={}>+</button>
+            <p>Counter: {count }</p>
+            <button onClick={incrementClickHandler}>+</button>
         </div>
     )
 }
