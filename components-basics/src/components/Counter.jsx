@@ -11,15 +11,22 @@ export default function Counter(props) {
         setCount(0);
     }
 
+    // if (count < 0) {
+    //     return (
+    //         <h3>Invalid count!</h3>
+    //     )
+    // }
+
+    let warning = null;
+
     if (count < 0) {
-        return (
-            <h3>Invalid count!</h3>
-        )
+        warning = <p> Invalid count!</p>
     }
 
     return (
         <div>
             <h1>Counter</h1>
+            {warning}
 
             <p>Counter: {count }</p>
             <button onClick={()=> setCount (count - 1)}>-</button>
