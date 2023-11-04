@@ -13,6 +13,7 @@ export default function Counter(props) {
 
             <p>Counter: {count }</p>
             <button onClick={incrementClickHandler}>+</button>
+            <button onClick={()=> setCount (count - 1)}>-</button>
         </div>
     )
 }
