@@ -1,11 +1,12 @@
 import {useState} from "react";
 
-export default function Timer(props) { 
-    const [time, setTime] = useState(0);
-    
 
-    // let time = 0;
-console.log(`Current time is ${time}`)
+export default function Timer(props) { 
+    const [time, setTime] = useState(props.startTime);
+    console.log(`Current time is ${time}`)
+    
+// Note: Don't use setTimeout, useEffect is more appropriate
+   
     setTimeout(() => {
         setTime(time + 1);
 
