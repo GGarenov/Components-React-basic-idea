@@ -11,6 +11,12 @@ export default function Counter(props) {
         setCount(0);
     }
 
+    if (counter < 0) {
+        return (
+            <h3>Invalid counter!</h3>
+        )
+    }
+
     return (
         <div>
             <h1>Counter</h1>
