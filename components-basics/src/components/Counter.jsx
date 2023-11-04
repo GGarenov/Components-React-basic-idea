@@ -11,9 +11,9 @@ export default function Counter(props) {
         setCount(0);
     }
 
-    if (counter < 0) {
+    if (count < 0) {
         return (
-            <h3>Invalid counter!</h3>
+            <h3>Invalid count!</h3>
         )
     }
 
@@ -22,9 +22,9 @@ export default function Counter(props) {
             <h1>Counter</h1>
 
             <p>Counter: {count }</p>
+            <button onClick={()=> setCount (count - 1)}>-</button>
             <button onClick={incrementClickHandler}>+</button>
             <button onClick={clearCounterHandler}>clear</button>
-            <button onClick={()=> setCount (count - 1)}>-</button>
         </div>
     )
 }
